@@ -1,0 +1,36 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -qE 'rm\\s+-rf\\s+/|rm\\s+-rf\\s+~|rm\\s+-rf\\s+\\*'; then echo 'BLOCKED: 위험한 삭제 명령어가 감지되었습니다.' >&2; exit 1; fi"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [[ \"$TOOL_INPUT\" == *.ts ]] || [[ \"$TOOL_INPUT\" == *.tsx ]]; then echo '📝 TypeScript 파일이 생성/수정되었습니다.'; fi"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '🔔 Claude Code 알림: $NOTIFICATION_MESSAGE'"
+          }
+        ]
+      }
+    ]
+  }
+}
