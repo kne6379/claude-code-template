@@ -25,6 +25,7 @@ cp -r .claude /your-project/
 ├── commands/                  # Slash Commands (슬래시 커맨드)
 │   ├── review.md              # /review - 코드 리뷰
 │   ├── test.md                # /test - 테스트 실행
+│   ├── commit.md              # /commit - 커밋 메시지 생성
 │   └── document.md            # /document - 문서 생성
 │
 ├── skills/                    # Skills (스킬)
@@ -61,6 +62,7 @@ cp -r .claude /your-project/
 ```
 /review              # 코드 리뷰 실행
 /test                # 테스트 실행
+/commit              # 커밋 메시지 생성
 /document src/api    # API 문서 생성
 ```
 
