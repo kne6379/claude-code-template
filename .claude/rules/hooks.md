@@ -19,9 +19,9 @@ globs:
 
 ## 훅 추가 방법
 
-`.claude/settings.json`의 `hooks` 객체에 새 훅을 추가합니다.
+`.claude/settings.json`의 `hooks` 객체에 새 훅을 추가하면 됩니다.
 
-사용 가능한 이벤트:
+사용 가능한 이벤트는 다음과 같습니다:
 - `PreToolUse`: 도구 실행 전 (차단 가능)
 - `PostToolUse`: 도구 실행 후
 - `Notification`: 알림 발생 시
@@ -30,4 +30,4 @@ globs:
 
 - 훅은 LLM 판단 없이 규칙 기반으로 무조건 실행됩니다
 - `exit 1`로 종료하면 해당 도구 실행이 차단됩니다
-- 환경변수 `$TOOL_INPUT`으로 도구 입력값에 접근할 수 있습니다
+- 환경변수 `$TOOL_INPUT`을 통해 도구 입력값에 접근할 수 있습니다

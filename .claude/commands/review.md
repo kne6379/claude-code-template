@@ -1,5 +1,5 @@
 ---
-description: 코드 리뷰 실행
+description: 코드 리뷰를 실행합니다
 ---
 
 # 코드 리뷰
@@ -9,27 +9,27 @@ description: 코드 리뷰 실행
 ## 수행 단계
 
 1. **변경 사항 확인**
-   - `git diff` 또는 `git diff --staged`로 변경된 파일 확인
+   - `git diff` 또는 `git diff --staged`로 변경된 파일을 확인합니다
 
 2. **코드 리뷰 수행**
-   - **code-reviewer** 서브에이전트를 사용하여 코드 품질 검토
-   - 코딩 컨벤션, 가독성, 유지보수성 평가
+   - **code-reviewer** 서브에이전트를 사용하여 코드 품질을 검토합니다
+   - 코딩 컨벤션, 가독성, 유지보수성을 평가합니다
 
 3. **보안 검사**
-   - **security-auditor** 서브에이전트를 사용하여 보안 취약점 검사
+   - **security-auditor** 서브에이전트를 사용하여 보안 취약점을 검사합니다
 
 4. **결과 종합**
-   - 발견된 이슈를 우선순위별로 정리
-   - 개선 제안 제공
+   - 발견된 이슈를 우선순위별로 정리합니다
+   - 개선 제안을 제공합니다
 
 ## 인자
 
-- `$ARGUMENTS`: 리뷰할 특정 파일 또는 디렉토리 (선택사항)
+- `$ARGUMENTS`: 리뷰할 특정 파일 또는 디렉토리입니다 (선택사항)
 
 ## 예시
 
 ```bash
-/review                    # 모든 변경 사항 리뷰
-/review src/auth          # auth 디렉토리만 리뷰
-/review --staged          # staged 파일만 리뷰
+/review                    # 모든 변경 사항을 리뷰합니다
+/review src/auth          # auth 디렉토리만 리뷰합니다
+/review --staged          # staged 파일만 리뷰합니다
 ```
