@@ -28,14 +28,21 @@ cp -r .claude /your-project/
 │   ├── commit.md              # /commit - 커밋 메시지 생성
 │   └── document.md            # /document - 문서 생성
 │
-├── skills/                    # Skills (스킬)
+├── rules/                     # Rules (경로별 세부 규칙)
+│   ├── feature-guide.md       # 기능별 사용 가이드
+│   ├── agents.md              # 에이전트 가이드
+│   ├── commands.md            # 커맨드 가이드
+│   ├── hooks.md               # 훅 가이드
+│   └── customizing.md         # 커스터마이징 가이드
+│
+├── skills/                    # Skills (스킬 - 자동 적용)
 │   ├── architecture/
 │   │   └── SKILL.md           # 아키텍처 가이드
 │   └── test-conventions/
 │       └── SKILL.md           # 테스트 컨벤션
 │
 ├── settings.json              # Hooks 정의
-└── CLAUDE.md                  # 프로젝트 컨텍스트
+└── CLAUDE.md                  # 공통 컨텍스트 (간결하게 유지)
 ```
 
 ## 기능별 차이점
