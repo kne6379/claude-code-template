@@ -1,6 +1,7 @@
 # Claude Code Template
 
 Claude Code의 Subagents, Commands, Skills, Hooks를 활용한 프로젝트 템플릿입니다.
+이 문서에서는 각 기능의 사용법과 커스터마이징 방법을 안내합니다.
 
 ## 빠른 시작
 
@@ -84,8 +85,8 @@ cp -r .claude /your-project/
 
 자동으로 실행됩니다:
 
-- 위험한 `rm -rf` 명령어 차단
-- TypeScript 파일 변경 시 알림
+- 위험한 `rm -rf` 명령어를 차단합니다
+- TypeScript 파일 변경 시 알림을 표시합니다
 
 ## 언제 무엇을 사용할까?
 
@@ -100,12 +101,12 @@ cp -r .claude /your-project/
 
 ## 커스터마이징
 
-각 파일을 프로젝트에 맞게 수정하세요:
+각 파일을 프로젝트에 맞게 수정할 수 있습니다:
 
-1. **에이전트 수정**: `.claude/agents/` 파일의 검토 기준 조정
-2. **스킬 수정**: `.claude/skills/*/SKILL.md`의 컨벤션 변경
-3. **훅 추가**: `.claude/settings.json`에 자동화 규칙 추가
-4. **커맨드 추가**: `.claude/commands/`에 새 커맨드 파일 생성
+1. **에이전트 수정**: `.claude/agents/` 파일의 검토 기준을 조정합니다
+2. **스킬 수정**: `.claude/skills/*/SKILL.md`의 컨벤션을 변경합니다
+3. **훅 추가**: `.claude/settings.json`에 자동화 규칙을 추가합니다
+4. **커맨드 추가**: `.claude/commands/`에 새 커맨드 파일을 생성합니다
 
 ## 참고 문서
 
